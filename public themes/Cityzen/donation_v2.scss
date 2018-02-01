@@ -1,0 +1,310 @@
+//
+// Copy the contents of this file and add it to
+// the end of theme.scss
+//
+
+.page-pages-show-donation-v2-wide {
+  .card-error-container .card-error {
+    padding-top: 5px;
+  }
+  span.error-message {
+    color: #ff0000;
+  }
+  h2.single-amount {
+    padding-bottom: 10px;
+  }
+  .ticket-list {
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      li {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+  .donation-v2-page-shrink-content {
+    width: 100%;
+  }
+  section.preheader,
+  footer div.menu {
+    display: none;
+  }
+  form .row-fluid:last-of-type::after {
+    margin-bottom: 0;
+  }
+  .donation-v2-occurence-radio {
+    margin-top: 10px;
+    label {
+      display: inline-block;
+    }
+  }
+  .donation-other-input-container {
+    position: relative;
+    .currency-symbol {
+      color: #000;
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      font-size: 20px;
+      transform: translate(0, -50%);
+    }
+    input {
+      padding-left: 20px;
+      font-size: 20px;
+      height: 54px;
+      margin-bottom: 0;
+      color: #000;
+    }
+    ::-webkit-input-placeholder { color: #000; }
+    :-moz-placeholder { color: #000; }
+    ::-moz-placeholder { color: #000; }
+    :-ms-input-placeholder { color: #000; }
+  }
+  .radio-inline.donation-v2-amounts {
+    text-align: center;
+
+    > span {
+      position: relative;
+      width: 50%;
+      float: left;
+      &:nth-child(even) {
+        padding: 0 0 0 7px;
+      }
+      &:nth-child(odd) {
+        padding: 0 7px 0 0;
+      }
+    }
+    input[type="radio"] {
+      display: block;
+      position: absolute;
+      left: -9999px;
+    }
+    label.radio {
+      @include border-radius(2px);
+      display: inline-block;
+      padding: 15px 5px;
+      font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 19px;
+      text-align: center;
+      margin: 5px 0 10px;
+      width: 100%;
+      border: 2px solid #fff;
+      background: transparent;
+    }
+    input[type="radio"]:checked+label {
+      background-color: #ed7800;
+      color: #fff;
+    }
+  }
+
+  .row-fluid > h4 {
+    padding: 35px 0 18px;
+    margin-bottom: 28px;
+    font-size: 27px;
+    border-bottom: 1px dashed #ccc;
+  }
+
+  .submit-container {
+    margin-top: 0px;
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #003262;
+    .donation-v2-amount {
+      font-size: 40px;
+      min-height: 47px;
+      text-align: center;
+      line-height: initial;
+      span {
+        opacity: 1;
+        color: #fff;
+        font-weight: bold;
+        display: inline-block;
+        .nb_donation_v2_interval {
+					font-size: 17px;
+          font-weight: normal;
+					&.hidden {
+						display: none;
+						opacity: 0;
+					}
+				}
+        &.hidden {
+          opacity: 0;
+          display: none;
+          + span {
+            font-size: 22px;
+            font-weight: normal;
+          }
+          ~ .nb_donation_v2_interval {
+            display: none;
+          }
+        }
+      }
+      .nb_donation_v2_amount {
+        margin-left: 4px;
+      }
+    }
+    input.submit-button {
+      padding: 14px 30px;
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+  }
+}
+@media (min-width: 320px) {
+  .page-pages-show-donation-v2-wide {
+    .donation-v2-occurence-radio  {
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 430px) {
+  .page-pages-show-donation-v2-wide {
+    .donation_amount_option {
+      margin-right: 0;
+    }
+    .donation-v2-options {
+      position: relative;
+      .donation-v2-occurence-radio {
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
+@media (min-width: 467px) {
+  .page-pages-show-donation-v2-wide {
+
+    .radio-inline.donation-v2-amounts {
+      text-align: left;
+      label.radio {
+        margin: 0 0 10px 0;
+      }
+      span {
+        float: left;
+        width: 50%;
+        padding: 0 7px 0 0;
+      }
+      span:nth-child(2n) {
+        padding: 0 0 0 7px;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .page-pages-show-donation-v2-wide {
+    .donation_form .form-wrap {
+      padding: 40px;
+    }
+    .donation-v2-occurence-radio {
+      input {
+        margin-top: -3px;
+      }
+      label.radio {
+        margin: 0 5px 0 3px;
+      }
+    }
+    .donation-v2-page-shrink-content {
+      width: 515px;
+      margin-left: 40px;
+    }
+  }
+}
+@media (min-width: 1027px) {
+  .page-pages-show-donation-v2-wide {
+    .site-logo header {
+      padding-left: 40px;
+    }
+    .donation-v2-page-shrink-content {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .page-pages-show-donation-v2-wide {
+    .radio-inline.donation-v2-amounts + .donation-v2-options,
+    .donation-v2-options {
+      clear: left;
+      margin-top: -8px;
+      .span6 {
+        position: relative;
+        width: 50%;
+        &:first-child {
+          padding-right: 7px;
+        }
+        &:last-child {
+          padding-left: 7px;
+          margin-left: 0;
+        }
+      }
+      .donation-v2-occurence-radio {
+        padding: 0;
+        width: 100%;
+        position: static;
+        transform: none;
+        margin: 0;
+        > span {
+          position: relative;
+          display: inline-block;
+          float: left;
+          width: 50%;
+          &:first-child {
+            padding-right: 7px;
+          }
+          &:last-child {
+            padding-left: 7px;
+          }
+        }
+        input[type="radio"] {
+          display: none;
+        }
+        label.radio {
+          @include border-radius(2px);
+          display: inline-block;
+          padding: 16px 5px;
+          font-family: "proxima-nova", Arial, Helvetica, sans-serif;
+          font-weight: bold;
+          font-size: 19px;
+          text-align: center;
+          margin: 0;
+          width: 100%;
+          border: 2px solid #fff;
+          background: transparent;
+          height: 54px;
+        }
+        input[type="radio"]:checked+label {
+          background-color: #ed7800;
+          color: #fff;
+        }
+      }
+    }
+    .header-container header {
+      float: none;
+    }
+    .donation-v2-options.single-amount-any-frequency {
+      padding-top: 10px;
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .page-pages-show-donation-v2-wide {
+    .radio-inline.donation-v2-amounts + .donation-v2-options .span6 {
+      width: 100%;
+      &:first-child {
+        padding: 0;
+      }
+      &:last-child {
+        padding: 14px 0 0 0;
+      }
+    }
+    .donation-v2-options.single-amount-any-frequency {
+      width: 100%;
+    }
+  }
+}
