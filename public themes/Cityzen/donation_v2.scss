@@ -57,15 +57,22 @@
       margin-bottom: 0;
       color: #000;
     }
-    ::-webkit-input-placeholder { color: #000; }
-    :-moz-placeholder { color: #000; }
-    ::-moz-placeholder { color: #000; }
-    :-ms-input-placeholder { color: #000; }
+    ::-webkit-input-placeholder {
+      color: #000;
+    }
+    :-moz-placeholder {
+      color: #000;
+    }
+    ::-moz-placeholder {
+      color: #000;
+    }
+    :-ms-input-placeholder {
+      color: #000;
+    }
   }
   .radio-inline.donation-v2-amounts {
     text-align: center;
-
-    > span {
+    >span {
       position: relative;
       width: 50%;
       float: left;
@@ -99,14 +106,12 @@
       color: #fff;
     }
   }
-
-  .row-fluid > h4 {
+  .row-fluid>h4 {
     padding: 35px 0 18px;
     margin-bottom: 28px;
     font-size: 27px;
     border-bottom: 1px dashed #ccc;
   }
-
   .submit-container {
     margin-top: 0px;
     text-align: center;
@@ -123,21 +128,21 @@
         font-weight: bold;
         display: inline-block;
         .nb_donation_v2_interval {
-					font-size: 17px;
+          font-size: 17px;
           font-weight: normal;
-					&.hidden {
-						display: none;
-						opacity: 0;
-					}
-				}
+          &.hidden {
+            display: none;
+            opacity: 0;
+          }
+        }
         &.hidden {
           opacity: 0;
           display: none;
-          + span {
+          +span {
             font-size: 22px;
             font-weight: normal;
           }
-          ~ .nb_donation_v2_interval {
+          ~.nb_donation_v2_interval {
             display: none;
           }
         }
@@ -153,13 +158,15 @@
     }
   }
 }
+
 @media (min-width: 320px) {
   .page-pages-show-donation-v2-wide {
-    .donation-v2-occurence-radio  {
+    .donation-v2-occurence-radio {
       margin: 0;
     }
   }
 }
+
 @media (min-width: 430px) {
   .page-pages-show-donation-v2-wide {
     .donation_amount_option {
@@ -176,9 +183,9 @@
     }
   }
 }
+
 @media (min-width: 467px) {
   .page-pages-show-donation-v2-wide {
-
     .radio-inline.donation-v2-amounts {
       text-align: left;
       label.radio {
@@ -195,6 +202,7 @@
     }
   }
 }
+
 @media (min-width: 768px) {
   .page-pages-show-donation-v2-wide {
     .donation_form .form-wrap {
@@ -214,6 +222,7 @@
     }
   }
 }
+
 @media (min-width: 1027px) {
   .page-pages-show-donation-v2-wide {
     .site-logo header {
@@ -227,7 +236,7 @@
 
 @media (max-width: 767px) {
   .page-pages-show-donation-v2-wide {
-    .radio-inline.donation-v2-amounts + .donation-v2-options,
+    .radio-inline.donation-v2-amounts+.donation-v2-options,
     .donation-v2-options {
       clear: left;
       margin-top: -8px;
@@ -248,7 +257,7 @@
         position: static;
         transform: none;
         margin: 0;
-        > span {
+        >span {
           position: relative;
           display: inline-block;
           float: left;
@@ -292,9 +301,10 @@
     }
   }
 }
+
 @media (max-width: 560px) {
   .page-pages-show-donation-v2-wide {
-    .radio-inline.donation-v2-amounts + .donation-v2-options .span6 {
+    .radio-inline.donation-v2-amounts+.donation-v2-options .span6 {
       width: 100%;
       &:first-child {
         padding: 0;
