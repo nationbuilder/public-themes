@@ -3,6 +3,12 @@
 // the end of theme.scss
 //
 .page-pages-show-donation-v2-wide {
+  .social-nav {
+    display: none;
+  }
+  &.has-background-image .header-container {
+    background: none;
+  }
   .card-error-container .card-error {
     padding-top: 5px;
     color: #c90c2a;
@@ -226,7 +232,24 @@
     }
   }
 }
-
+@media (max-width: 1023px) {
+  .page-pages-show-donation-v2-wide {
+    .single-amount ~ .donation-v2-options {
+      padding-top: 0px;
+      .donation-v2-occurence-radio {
+        position: relative;
+        top: auto;
+        transform: none;
+      }
+    }
+    .donation-v2-options.single-amount-any-frequency {
+      label {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
   .page-pages-show-donation-v2-wide {
     .radio-inline.donation-v2-amounts {
@@ -318,10 +341,6 @@
     }
     .donation-v2-options.single-amount-any-frequency {
       padding-top: 10px;
-      label {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
     }
   }
 }
