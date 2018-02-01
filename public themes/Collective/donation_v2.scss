@@ -39,10 +39,10 @@
     margin: 0;
     padding: 40px 20px;
   }
-  form .row-fluid > h4 {
+  form .row-fluid>h4 {
     margin-top: 40px;
   }
-  form .row-fluid:first-of-type > h4 {
+  form .row-fluid:first-of-type>h4 {
     margin-top: 20px;
   }
   .donation-v2-options.single-amount-any-frequency {
@@ -86,7 +86,7 @@
     }
   }
   .radio-inline.donation-v2-amounts {
-    > span {
+    >span {
       position: relative;
     }
     input[type="radio"] {
@@ -118,7 +118,6 @@
     @include border-radius(2px);
     text-align: center;
     padding: 50px 20px 25px;
-
     .donation-v2-amount {
       font-size: 40px;
       text-align: center;
@@ -141,11 +140,11 @@
         &.hidden {
           opacity: 0;
           display: none;
-          + span {
+          +span {
             font-size: 22px;
             font-weight: normal;
           }
-          ~ .nb_donation_v2_interval {
+          ~.nb_donation_v2_interval {
             display: none;
           }
         }
@@ -161,10 +160,11 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .page-pages-show-donation-v2-wide {
     .radio-inline.donation-v2-amounts {
-      > span {
+      >span {
         position: relative;
         width: 50%;
         float: left;
@@ -178,7 +178,7 @@
           width: 100%;
         }
       }
-      + .donation-v2-options {
+      +.donation-v2-options {
         clear: left;
         padding-top: 30px;
         .span6 {
@@ -196,7 +196,7 @@
           width: 100%;
           position: static;
           transform: none;
-          > span {
+          >span {
             position: relative;
             display: inline-block;
             float: left;
@@ -234,15 +234,16 @@
         }
       }
     }
-    .donation-v2-options.single-amount-any-frequency label{
+    .donation-v2-options.single-amount-any-frequency label {
       padding-left: 15px;
       padding-right: 15px;
     }
   }
 }
+
 @media (max-width: 520px) {
   .page-pages-show-donation-v2-wide {
-    .radio-inline.donation-v2-amounts + .donation-v2-options .span6 {
+    .radio-inline.donation-v2-amounts+.donation-v2-options .span6 {
       width: 100%;
       &:first-child {
         padding: 0;
@@ -253,6 +254,7 @@
     }
   }
 }
+
 @media (min-width: 430px) {
   .page-pages-show-donation-v2-wide {
     .row-fluid.donation-v2-options .span6 .donation-v2-occurence-radio label {

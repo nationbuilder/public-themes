@@ -25,7 +25,7 @@
   }
   .header-container {
     background: none;
-    .title a{
+    .title a {
       color: #516e16;
     }
   }
@@ -56,12 +56,13 @@
       height: 54px;
       margin-bottom: 0;
       &.nb_donation_v2_amount {
-        line-height: 45px; /* safari bug */
+        line-height: 45px;
+        /* safari bug */
       }
     }
   }
   .radio-inline.donation-v2-amounts {
-    > span {
+    >span {
       position: relative;
     }
     input[type="radio"] {
@@ -112,7 +113,6 @@
     @include box-shadow(0 1px 2px 0 #ebebeb);
     background-color: #fff;
     text-align: center;
-
     .donation-v2-amount {
       font-size: 40px;
       text-align: center;
@@ -125,21 +125,21 @@
         font-weight: bold;
         display: inline-block;
         .nb_donation_v2_interval {
-					font-size: 17px;
+          font-size: 17px;
           font-weight: normal;
-					&.hidden {
-						display: none;
-						opacity: 0;
-					}
-				}
+          &.hidden {
+            display: none;
+            opacity: 0;
+          }
+        }
         &.hidden {
           opacity: 0;
           display: none;
-          + span {
+          +span {
             font-size: 20px;
             font-weight: normal;
           }
-          ~ .nb_donation_v2_interval {
+          ~.nb_donation_v2_interval {
             display: none;
           }
         }
@@ -154,6 +154,7 @@
     }
   }
 }
+
 @media (min-width: 610px) {
   .page-pages-show-donation-v2-wide .onecolumn-container {
     width: 550px;
@@ -162,6 +163,7 @@
     }
   }
 }
+
 @media (min-width: 667px) {
   .page-pages-show-donation-v2-wide .row-fluid.donation-v2-options {
     position: relative;
@@ -177,6 +179,7 @@
     }
   }
 }
+
 @media (min-width: 768px) {
   .page-pages-show-donation-v2-wide {
     .site-logo header {
@@ -184,10 +187,11 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .page-pages-show-donation-v2-wide {
     .radio-inline.donation-v2-amounts {
-      > span {
+      >span {
         position: relative;
         width: 50%;
         float: left;
@@ -202,7 +206,7 @@
         }
       }
     }
-    .radio-inline.donation-v2-amounts + .donation-v2-options,
+    .radio-inline.donation-v2-amounts+.donation-v2-options,
     .donation-v2-options {
       clear: left;
       padding-top: 30px;
@@ -223,7 +227,7 @@
         position: static;
         transform: none;
         margin: 0;
-        > span {
+        >span {
           position: relative;
           display: inline-block;
           float: left;
@@ -263,9 +267,10 @@
     }
   }
 }
+
 @media (max-width: 560px) {
   .page-pages-show-donation-v2-wide {
-    .radio-inline.donation-v2-amounts + .donation-v2-options .span6 {
+    .radio-inline.donation-v2-amounts+.donation-v2-options .span6 {
       width: 100%;
       &:first-child {
         padding: 0;
@@ -274,7 +279,7 @@
         padding: 14px 0 0 0;
       }
     }
-    .donation-v2-amount > span > span {
+    .donation-v2-amount>span>span {
       font-size: 32px;
     }
     .donation-v2-options.single-amount-any-frequency {

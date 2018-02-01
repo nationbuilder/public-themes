@@ -2,7 +2,6 @@
 // Copy the contents of this file and add it to
 // the end of theme.scss
 //
-
 .page-pages-show-donation-v2-wide {
   .card-error-container .card-error {
     padding-top: 5px;
@@ -51,7 +50,7 @@
     background: #fff;
   }
   #content .form-wrap .row-fluid {
-    > h4 {
+    >h4 {
       margin: 35px 0 17px;
       padding-bottom: 10px;
       border-bottom: 2px solid #e7e7e7;
@@ -74,7 +73,6 @@
       top: 1px;
     }
   }
-
   .donation-other-input-container {
     position: relative;
     .currency-symbol {
@@ -92,7 +90,7 @@
     }
   }
   .radio-inline.donation-v2-amounts {
-    > span {
+    >span {
       position: relative;
     }
     input[type="radio"] {
@@ -156,10 +154,10 @@
         &.hidden {
           opacity: 0;
           display: none;
-          + span {
+          +span {
             font-size: 22px;
           }
-          ~ .nb_donation_v2_interval {
+          ~.nb_donation_v2_interval {
             display: none;
           }
         }
@@ -175,6 +173,7 @@
     }
   }
 }
+
 @media (min-width: 571px) {
   .page-pages-show-donation-v2-wide {
     .donation-v2-amounts::before,
@@ -210,6 +209,7 @@
     }
   }
 }
+
 @media (min-width: 767px) {
   .page-pages-show-donation-v2-wide {
     .main.width-container {
@@ -226,10 +226,11 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .page-pages-show-donation-v2-wide {
     .radio-inline.donation-v2-amounts {
-      > span {
+      >span {
         position: relative;
         width: 50%;
         float: left;
@@ -247,7 +248,7 @@
           width: 100%;
         }
       }
-      + .donation-v2-options {
+      +.donation-v2-options {
         clear: left;
         padding-top: 30px;
         .span6 {
@@ -268,7 +269,7 @@
           position: static;
           transform: none;
           margin: 0;
-          > span {
+          >span {
             position: relative;
             display: inline-block;
             float: left;
@@ -324,6 +325,7 @@
     }
   }
 }
+
 @media (max-width: 570px) {
   .page-pages-show-donation-v2-wide {
     .main.width-container,
@@ -334,7 +336,7 @@
     .header-container {
       margin-bottom: 0;
     }
-    .radio-inline.donation-v2-amounts + .donation-v2-options .span6 {
+    .radio-inline.donation-v2-amounts+.donation-v2-options .span6 {
       width: 100%;
       &:first-child {
         padding: 0;
@@ -345,6 +347,7 @@
     }
   }
 }
+
 @media (max-width: 420px) {
   .page-pages-show-donation-v2-wide .submit-container span {
     display: inline-block;
